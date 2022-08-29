@@ -9,3 +9,5 @@ const functionOne = (param1) => {
 let functionThree = functionOne("Affan")
 let output = functionThree("is a Javascript developer")
 console.log(output)
+
+export default functionOne;
