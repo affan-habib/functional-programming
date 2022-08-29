@@ -1,4 +1,4 @@
-// Symbols are premitive datatype
+// Symbols are primitive datatype
 
 let name = "Javascript";
 let str = new String("Javascript");
