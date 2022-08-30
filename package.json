@@ -6,6 +6,6 @@
   },
   "type": "module",
   "scripts": {
-    "start": "nodemon import"
+    "start": "nodemon index"
   }
 }
