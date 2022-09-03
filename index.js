@@ -67,9 +67,9 @@ const array = [
   },
 ];
 
-const findOne = (arr) => arr.find((el) => el.array);
-// console.log(findOne(array)) // find only return first truthy
+const [a, ...b] = array;
+// console.log({a}, {b});
 
-const reduceOne = (arr) =>
-  arr.reduce((a, b) => [...a, b.numberOne], []).reduce((a, b) => a + parseInt(b), 2); // Expected Return 
-console.log(reduceOne(array));
+
+const functionOne = ({x,...y}) => y
+console.log(functionOne(array))
