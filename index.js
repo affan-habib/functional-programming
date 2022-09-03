@@ -1,7 +1,7 @@
 const array = [
   {
     key: 1,
-    numberOne: 74,
+    numberOne: "74",
     numberTwo: 42,
     numberThree: 42,
     numberFour: 42,
@@ -67,5 +67,9 @@ const array = [
   },
 ];
 
-const findOne = (arr) => arr.find((el) => el.array)
-console.log(findOne(array)) // find only return first truthy 
+const findOne = (arr) => arr.find((el) => el.array);
+// console.log(findOne(array)) // find only return first truthy
+
+const reduceOne = (arr) =>
+  arr.reduce((a, b) => [...a, b.numberOne], []).reduce((a, b) => a + parseInt(b), 2); // Expected Return 
+console.log(reduceOne(array));
