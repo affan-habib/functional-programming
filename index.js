@@ -23,3 +23,5 @@ console.log(arr.map((a, index) => a || index));
 console.log(arr.filter((el) => el >= 0));
 // Expected Return [ false, -0, false, null, 10 ]
 // it will check greater than 0 and also return all other items
+
+console.log(arr.filter(Boolean))
