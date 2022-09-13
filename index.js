@@ -35,3 +35,5 @@ console.log(arr)
 const findOne = (arr) => arr.find((el) => (typeof(el) == "string"))
 
 console.log(findOne(arr))
+
+// Find Will return referece type data. if we change the object it will affect on main array. 
