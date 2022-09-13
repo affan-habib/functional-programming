@@ -11,13 +11,15 @@ const objTwo = { name: "Java", age: 23 };
 const functionTwo = (object, property) => console.log(object[property]);
 functionTwo(objTwo, "age");
 
+const arr = ["f", false, -0, undefined, false, null, -5, 10];
 
-const arr = ["f", false, -0, undefined, false, null]
+arr.length = 8;
 
-arr.length = 8
+console.log(arr);
 
-console.log(arr)
-
-console.log(arr.map((a, index) => ( a || index)))
+console.log(arr.map((a, index) => a || index));
 
 // Expected Return [ 'f', 1, 2, 3, 4, 5, <2 empty items> ]
+console.log(arr.filter((el) => el >= 0));
+// Expected Return [ false, -0, false, null, 10 ]
+// it will check greater than 0 and also return all other items
