@@ -25,3 +25,13 @@ console.log(arr.filter((el) => el >= 0));
 // it will check greater than 0 and also return all other items
 
 console.log(arr.filter(Boolean))
+
+const filtered = arr.filter(Boolean)
+filtered[0] = "First One"
+console.log(filtered)
+
+console.log(arr)
+
+const findOne = (arr) => arr.find((el) => (typeof(el) == "string"))
+
+console.log(findOne(arr))
