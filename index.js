@@ -24,3 +24,4 @@ for (let i = 0; i < 50000; ++i) {
 var end = new Date().getTime();
 var time = end - start;
 console.log('Execution time: ' + time);
+
