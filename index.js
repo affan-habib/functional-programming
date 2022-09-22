@@ -1,27 +1,24 @@
-// Performace Check 
-// Function Execution time
+console.log("Start")
+  setTimeout(() => {
+    console.log("middle")   
+  }, 0);
 
-function doSomething(a){
-  return(
-    console.log(a + "something")
-  )
+console.log("End")
+
+
+function doSomething(){
+  setTimeout(()=> console.log("Do Something"),1000)
 }
 
-var startTime = performance.now()
-doSomething("hello ")      
-var endTime = performance.now()
-console.log(startTime, endTime)
-
-
-
-// Example Two
-var start = new Date().getTime();
-
-for (let i = 0; i < 50000; ++i) {
-// do something
-}
-
-var end = new Date().getTime();
-var time = end - start;
-console.log('Execution time: ' + time);
-
+doSomething()
+console.log("Start Second"[2])
+console.log("End Second")
+console.log(0/0) // NAN 
+console.log(-50/-5) // NAN 
+console.log(true + 1) // 2
+console.log(true - 5) // -4
+console.log(false - 5) //-5
+console.log(false + +"5") // 5
+console.log(false + -"10") // -10
+console.log(typeof(null + -"32")) // -32 number
+console.log(undefined + -"32") // -10
